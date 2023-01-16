@@ -1,33 +1,76 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>login</title>
-    </head>
-    <body>
-        <form>
-            <div>
-                <label for ="Name"> Your Name</label><br>
-                <input type = "text" id = "Name" required>
+
+<head>
+    <link rel="icon" href = "images/cool.ico" type = "image/x-icon">
+    <title>login</title>
+    <meta name = "description" content = " this is a demo page">
+    <meta name = "keywords" content = "demo, coding, html">
+    <meta name = "author" content = "Abhay Dutt">
+</head>
+
+<body>
+    <form action = "" method = "post">
+        <div>
+            <label for="Name"> Your Name</label><br>
+            <input type="text" name="Name" value="Abhay Dutt" id="Name" required>
+        </div>
+        <div>
+            <label for="UserPassword">Your Password</label><br>
+            <input type="password" name="UserPassword" id="UserPassword">
+        </div>
+        <div>
+            <label for="MAIL"> Your Mail</label><br>
+            <input type="email" name="UserEmail" id="MAIL" required placeholder="abc@example.com">
+        </div>
+        <div>
+            <label for="RANGE1">MarksRange</label><br>
+            <input type="range" name="UserMarks" id="RANGE1" min="0" max=100 step="10">
+        </div>
+        <div>
+            <label for="TIME1">ExamTime</label><br>
+            <input type="time" name="ExamTime" id="TIME1" required>
+        </div>
+        <div>
+            <label for="year">YOB</label><br>
+            <input type="number" id="year" required value="2003" disabled>
+        </div>
+        <div>
+            <!-- It is illegal to use the same id twise in the same page-->
+            <label for id="Gender"> SelectGender</label><br>
+            <input type="radio" id="Gender" name="SelectedGender" value="Male" checked>Male<br>
+            <input type="radio" id="Gender2" name="SelectedGender" value="Female">Female<br>
+            <input type="radio" id="Gender3" name="SelectedGender" value="Others">Other<br>
+        </div>
+        <div>
+            <label for = "CourseDone1">Select courses done</label><br>
+            <input type = "checkbox" id = "CourseDone1" name = "Course" value = "c++">c++<br>
+            <input type = "checkbox" id = "CourseDone3" name = "Course" value = "java" checked>java<br>
+            <input type = "checkbox" id = "CourseDone2" name = "Course" value = "WebDev">webDev<br>
+        </div>
+        <div>
+            <select name = "month_selected" multiple>
+                <option> Jan</option>
+                <option>Feb</option>
+                <option selected>Mar</option>
+                <option>Apr</option>
+                </select> 
+            </select>
+        </div>
+        <div>
+        <label for = "Comment"><Strong>Share your experince<Strong></label><br>
+        <textarea name = "Comments" rows="10" cols="30" id = "Comment"></textarea>
+        </div>
+        <div>
+        <input type = "button" value = "Button1" name = "DemoButton">
+        </div>
+        <div>
+            <button type = "reset"><img src ="images/0000000000001394.png"></button>
             </div>
-            <div>
-                <label for = "UserPassword">Your Password</label><br>
-                <input type = "password" id = "UserPassword">
-            </div>
-            <div>
-                <label for = "MAIL"> Your Mail</label><br>
-                <input type  = "email" id ="MAIL" required placeholder="abc@example.com">
-            </div>
-            <div>
-                <label for  = "RANGE1">MarksRange</label><br>
-                <input type  = "range" id = "RANGE1" min = "0" max= 100 step = "10">
-            </div>
-            <div>
-                <label for = "TIME1">ExamTime</label><br>
-                <input type = "time" id = "TIME1" required>
-            </div>
-            <div>
-                <input type = "submit">
-            </div>
-        </form>
-    </body>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+</body>
+
 </html>
