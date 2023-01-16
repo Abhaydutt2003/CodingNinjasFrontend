@@ -8,12 +8,14 @@
       text-align: center;
     }
   </style>
-  <a href = "../HTMLBasics/BlogCatagories.html"> <u>home</u> </a>
+  <a href="../HTMLBasics/BlogCatagories.html"> <u>
+      <h5>HOME</h5>
+    </u> </a>
   <title>Five tips for frontend developers</title>
 </head>
 
 <body>
-  <header>
+  <nav id="navigation">
     <a href="https://codingninjas.in" target="_blank"><img src="images/0000000000001394.png"></a>
     <h3>
       <a href="https://blog.codingninjas.in">
@@ -22,69 +24,108 @@
     </h3>
     <p> Coding ninjas Official Blog</p>
     <img src="images/0000000000001395.png">
+  </nav>
+  <header>
+    <h1>
+      Five tips for
+      <br />frontend developers..
+    </h1>
+    <img src="images/Five-tips-for-front-end-web-development.jpg" height="250" width="50%" alt="Five tips">
+    <span>
+      <p> <strong> VIEWS = 1137</strong>
+    </span>
   </header>
-  <h1>
-    Five tips for
-    <br />frontend developers..
-  </h1>
-  <img src="images/Five-tips-for-front-end-web-development.jpg" height="250" width="50%" alt="Five tips">
-  <p>
-    Don't &nbsp you just love exploring beautiful and neat sites with a
-    clean user interface? While most of us would reply with an assertive
-    "YES" little, do we know the kind of effort and skill that goes into
-    making a website attractive and user-friendly. The secret to creating an
-    impressive site is to master the art of front-end development, and no,
-    it is not as easy as it seems!
-  </p>
-  <p>
-    However, it is not impossible either. Here are five tips that will help
-    you get better in front-end design and web development.
-  </p>
-  <ol type="A" start=11>
-    <li>
-      <h3>Commenting</h3>
+  <main>
+    <article>
       <p>
-        Commenting is one such practice that is often ignored by
-        programmers, especially for codes that are written by multiple
-        programmers. But remember, commenting is an important part of
-        project you create. With proper comments and organised files its
-        always easier for you or others to jump in and understand where
-        things are at and how they work.
+        Don&apos;t &nbsp; &gt; &lt; you just love exploring beautiful and neat sites with a
+        clean user interface? While most of us would reply with an assertive
+        "YES" little, do we know the kind of effort and skill that goes into
+        making a website attractive and user-friendly. The secret to creating an
+        impressive site is to master the art of front-end development, and no,
+        it is not as easy as it seems!
       </p>
-    </li>
-    <li>
-      <h3>Invest In Productive Tools.</h3>
       <p>
-        The Internet is teeming with a host of web development tools, from
-        browser add-ons to smart plugins, the amount of choices available
-        now is massive! So, why not invest in some really productive web
-        tools thatâ€™ll help you improve your front-end designing skills?
-        Tools like Sublime Text, jQuery, Emmet, Bootstrap, and Sass are
-        nothing short of a godsend for web developers.
+        However, it is not impossible either. Here are five tips that will help
+        you get better in front-end design and web development.
       </p>
-    </li>
-    <li>
-      <h3>
-        Always Be Curious.
-      </h3>
-      <p>
-        A front-end developer has to keep himself/herself updated continuously with the latest news and innovations in
-        the field. You need to take a proactive stand and learn new things about front-end development from informative
-        blogs and videos. Following are some of the most informative and useful learning sources for front-end
-        developers -
-      </p>
-      <ul type="circle">
+      <ol type="A" start=11>
         <li>
-          <a href="https://manga4life.com" target="_blank">
-            Read Manga
-          </a>
+          <h3>Commenting</h3>
+          <p>
+            Commenting is one such practice that is often ignored by
+            programmers, especially for codes that are written by multiple
+            programmers. But remember, commenting is an important part of
+            project you create. With proper comments and organised files its
+            always easier for you or others to jump in and understand where
+            things are at and how they work.
+          </p>
         </li>
-        <li> CSS Weekly</li>
-        <li> Javascript Weekly</li>
-        <li> Web Design Weekly</li>
-      </ul>
-    </li>
-  </ol>
+        <li>
+          <h3>Invest In Productive Tools.</h3>
+          <p>
+            The Internet is teeming with a host of web development tools, from
+            browser add-ons to smart plugins, the amount of choices available
+            now is massive! So, why not invest in some really productive web
+            tools thatâ€™ll help you improve your front-end designing skills?
+            Tools like Sublime Text, jQuery, Emmet, Bootstrap, and Sass are
+            nothing short of a godsend for web developers.
+          </p>
+        </li>
+        <li>
+          <h3>
+            Always Be Curious.
+          </h3>
+          <p>
+            A front-end developer has to keep himself/herself updated continuously with the latest news and innovations
+            in
+            the field. You need to take a proactive stand and learn new things about front-end development from
+            informative
+            blogs and videos. Following are some of the most informative and useful learning sources for front-end
+            developers -
+          </p>
+          <ul type="circle">
+            <li>
+              <a href="https://manga4life.com" target="_blank">
+                Read Manga
+              </a>
+            </li>
+            <li> CSS Weekly</li>
+            <li> Javascript Weekly</li>
+            <li> Web Design Weekly</li>
+          </ul>
+        </li>
+      </ol>
+      <a href="#">
+        <h4>go to top</h4>
+      </a>
+      <a href="#navigation">
+        <h4> go to navigation</h4>
+      </a>
+    </article>
+  </main>
+  <footer>
+    <h4>Leave A Reply</h4>
+    <p>Yout email address will not be published, Required fields are marked *</p>
+    <form>
+      <div>
+        <label for ="comment"><Strong>Share your Experince</Strong></label><br>
+        <textarea name = "Comments" id = "comment" rows="10" cols="30"></textarea>
+      </div>
+      <div>
+        <label for="NAME">Name*</label>
+        <input type="text" id="NAME" required>
+      </div>
+      <div>
+        <label for="EMAIL">Email*</label>
+        <input type="email" id="EMAIL" required>
+      </div>
+      <div>
+        <label for="WEBSITE">Website</label>
+        <input type="url" id="WEBSITE">
+      </div>
+    </form>
+  </footer>
 </body>
 
 </html>
