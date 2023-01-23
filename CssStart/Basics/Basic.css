@@ -1,0 +1,62 @@
+p {
+
+    color: darkgreen;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    color: color(srgb 0.4557 0.6524 0.6152);
+}
+
+header {
+    width: 400px;
+}
+
+main {
+    width: 1000px;
+}
+
+.modText {
+    font-family: cursive;
+    text-transform: uppercase;
+}
+
+.modText2 {
+    font-family: fantasy;
+    color: brown;
+}
+
+#ABC {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: darkcyan;
+}
+
+#para1 {
+    font-family: cursive;
+}
+
+#para2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#para3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#blog-title:hover,h3:hover{
+    color:blueviolet;
+}
+h2{
+    font-size: xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* h2,h3,#blog-title{
+    font-size: xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}nesting is also possible.. 
+*/
+#slider{
+    background-color: chocolate;
+    width:150px;
+}
