@@ -1,0 +1,15 @@
+html{
+    font-size: 10px;
+}
+#div1{
+    height: 25vh;
+    width: 25vw;
+    /* height:rem;
+    width :85rem; */
+    background-color: brown;
+}
+#div2{
+    height : 50%;
+    width: 50%;
+    background-color: crimson;
+}
