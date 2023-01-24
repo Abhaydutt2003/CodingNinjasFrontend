@@ -1,0 +1,13 @@
+#TAG1{
+    height:25vh;
+    width:25vw;
+    background-color:blueviolet;
+    /* margin:4px 20px 20px 30px; */
+    margin-bottom: 10px;
+}
+#TAG2{
+    height:20vh;
+    width:20vw;
+    background-color: brown;
+    margin-top: -20px;
+}
