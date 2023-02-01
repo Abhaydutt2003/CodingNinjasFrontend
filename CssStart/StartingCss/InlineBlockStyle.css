@@ -1,0 +1,9 @@
+#para1{
+    color:crimson;
+    display: inline;
+}
+#para2{
+    color:blue;
+    display: inline-block;
+    width:100vw;
+}
