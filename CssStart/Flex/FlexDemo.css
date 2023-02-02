@@ -1,0 +1,34 @@
+#Box{
+    height:400px;
+    width:auto;
+    background-color: lightgray;
+    display :flex;
+    flex-direction:column-reverse;
+    flex-wrap: wrap-reverse;
+}
+#Box div{
+    height:200px;
+    width:300px;
+}
+#smallBox1{
+    background-color: cyan;
+}
+#smallBox2{
+    background-color: red;
+}
+#smallBox3{
+    background-color: darkgray;
+}
+#smallBox4{
+    background-color: maroon;
+}
+#smallBox5{
+    background-color: orange;
+}
+#smallBox6{
+    background-color: seagreen;
+}
+#smallBox7{
+    background-color:coral;
+}
+
