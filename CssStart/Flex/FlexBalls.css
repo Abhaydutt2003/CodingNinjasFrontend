@@ -1,61 +1,72 @@
 .MainBox{
-    height:530px;
+    height:700px;
     width:530px;
     background-color: beige;
     border-color: black;
     border-width: 4px;
     border-style: solid;
     display:flex;
+    justify-content:space-around;
+    align-items:center;
     /* flex-direction: column-reverse; */
     /* flex-direction: row; */
     /* flex-direction:row-reverse;*/
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin: auto;
-}
+    /* flex-wrap: wrap-reverse; */
+ }
 .MainBox div{
-    margin: auto;
+    /* margin: auto; */
     border-radius: 50%;
     border: 3px solid lightgray;
     box-sizing: border-box;
+    /* margin: auto;
+    margin-top: 0px; */
 }
 #ball1 {
     height: 30px;
     width: 30px;
     background-color: #ff9bc9;
-    order: 0;
+    /* flex-shrink: 1; */
+    /* flex-grow: 1; */
 }
 
 #ball2 {
     height: 40px;
     width: 40px;
     background-color: #df8eff;
-    order:5;
+    /* flex-shrink: 4; */
+    /* flex-grow: 2; */
 }
 
 #ball3 {
     height: 50px;
     width: 50px;
     background-color: #91dcff;
-    order:3;
+    /* flex-shrink: 1; */
+    /* flex-grow: 3; */
 }
 
 #ball4 {
     height: 60px;
     width: 60px;
     background-color: #93ff99;
-    order:2;
+    /* flex-shrink: 1; */
+    /* flex-grow: 4; */
 }
 
 #ball5 {
     height: 70px;
     width: 70px;
     background-color: #dfff89;
-    order:4;
+    /* flex-shrink: 2; */
+    /* flex-grow: 5; */
 }
 
 #ball6 {
     height: 80px;
     width: 80px;
     background-color: #ffdf8e;
-    order:1;
+    /* flex-shrink: 3; */
+    /* s */
 }
