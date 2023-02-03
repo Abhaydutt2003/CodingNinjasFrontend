@@ -1,0 +1,38 @@
+#FirstBox{
+    border:4px black solid;
+    background-color:lightcoral;
+    height:600px;
+    width:700px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    /* justify-content:center; */
+    align-items: baseline;
+    /* flex-wrap: wrap-reverse; */
+    /* justify-content: space-between; */
+}
+#FirstBox div{
+    height:100px;
+    /* max-height: 200px; */
+    width:100px;
+}
+#SecondBox{
+    background-color: aquamarine;
+    border:2px black solid;
+    margin-top: 10px;
+}
+#ThirdBox{
+    background-color: burlywood;
+    border:2px black solid;
+    margin-top: 20px;
+}
+#FourthBox{
+    background-color:brown;
+    border:2px black solid;
+    margin-top: 30px;
+}
+#FifthBox{
+    background-color: cadetblue;
+    border:2px black solid;
+    margin-top: 40px;
+}
