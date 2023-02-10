@@ -9,6 +9,19 @@
     background-position: center;
     background-attachment: fixed;
 }
+/*Making every section display as flex*/
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+section:nth-child(even){
+    background-color:whitesmoke;
+}
+section:nth-child(odd){
+    background-color: white;
+}
 
 /* Horizontal list*/
 
@@ -102,7 +115,8 @@
 #Image{
     height:12rem;
     width: 12rem;
-    background-image:url(/CssStart/StartingWithResumeProject/assets/Screenshot\ 2023-02-02\ at\ 2.41.06\ PM.png) ;
+    /* background-image:url(/CssStart/StartingWithResumeProject/assets/Screenshot\ 2023-02-02\ at\ 2.41.06\ PM.png) ; */
+    background-image: url(/HTMLBasics/images/Five-tips-for-front-end-web-development.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -113,5 +127,90 @@
     border-style: solid;
     box-shadow: 0px 0px 4px 6px lightgray;
     margin-bottom: 2vh;
+}
+/* Skills Section*/
+ #sectionHeading{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    margin-top: 0px;
+    padding-top: 20px;
+ }
+ #sectionHeading span{
+    font-size: 40px;
+    font-weight: 400;
+    color:#2857a4;
+    margin-right:0.5rem;
+ }
+#skillsDisplay{
+    width:80%;
+    height:150px;
+    border:3px black solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/*Skills*/
+#cplus{
+    height: 1.4rem;
+    width: 7rem;
+    background-color:lightgrey;
+    border-radius:0.8rem; 
+}
+#cplus div{
+    background-color: blue;
+    height: 100%;
+    border-radius: 0.8rem;
+    width: 40%;
+    box-shadow: 2px 0px 4px 2px gray;
+    overflow: hidden;
+}
+#cplus div span{
+    color:white;
+    margin-left: 10px;
+    font-size: smaller;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* java skills */
+#java{
+    height: 1.4rem;
+    width: 7rem;
+    background-color:lightgrey;
+    border-radius:0.8rem;
+}
+#java div{
+    background-color:orange;
+    height: 100%;
+    border-radius: 0.8rem;
+    width: 80%;
+    box-shadow: 2px 0px 4px 2px gray;
+    overflow: hidden;
+}
+#java div span{
+    color:white;
+    margin-left: 10px;
+    font-size: smaller;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* html skills */
+#html{
+    height: 1.4rem;
+    width: 7rem;
+    background-color:lightgrey;
+    border-radius:0.8rem;
+}
+#html div{
+    background-color:chocolate;
+    height: 100%;
+    border-radius: 0.8rem;
+    width: 80%;
+    box-shadow: 2px 0px 4px 2px gray;
+    overflow: hidden;
+} 
+#html div span{
+    color:white;
+    margin-left: 10px;
+    font-size: smaller;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
