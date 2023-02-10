@@ -1,0 +1,6 @@
+#para{
+    height:auto;
+    width: 30px;
+    border: 3px black solid;
+    overflow-wrap:break-word;
+}
