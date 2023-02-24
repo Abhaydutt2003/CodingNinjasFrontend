@@ -1,0 +1,40 @@
+#para1::first-letter{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform:capitalize;
+}
+#para2::first-line{
+    text-transform: capitalize;
+    font-weight:600;
+}
+#para3::before{
+    content: 'Before ';
+    font-weight: 1.5rem;
+    font-weight:900;
+}
+#para3::after{
+    content: ' after';
+    font-weight: 1.5rem;
+    font-weight:900;
+}
+#para4::after{
+    content:'';
+    display: inline-block;
+    background-image: url(/HTMLBasics/images/0000000000001394.png);
+    height:40px;
+    width:40px;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+ul{
+    list-style: none;
+}
+li::before{
+    content: '';
+    display: inline-block;
+    background-image: url(/HTMLBasics/images/0000000000001394.png);
+    height:40px;
+    width:40px;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
