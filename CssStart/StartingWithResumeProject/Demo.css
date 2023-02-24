@@ -22,7 +22,9 @@ section:nth-child(even){
 section:nth-child(odd){
     background-color: white;
 }
-
+/* section:target{
+    background-color: aqua;
+} */
 /* Horizontal list*/
 
 .Horizontal-List{
@@ -213,4 +215,32 @@ section:nth-child(odd){
     font-size: smaller;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+/* experience part */
+#experienceHeading{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#experienceHeading span{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: xx-large;
+    color: #2857a4;
+}
+#timeLine{
+    position: relative;
+    width:75%;
+    border:3px solid black;
+}
+.timeLineBox{
+    position: relative;
+    width: 40%;
+    left:5%;
+    border:1px solid black;
+    min-height: 150px;
+    margin-top:3px;
+}
+.timeLineBox:nth-child(2n){
+    left:53%;
+}
