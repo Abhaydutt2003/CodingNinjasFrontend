@@ -1,0 +1,32 @@
+#para1{
+    width:60%;
+    border:3px black solid;
+}
+/* desktop first thinking */
+/* @media screen and (max-width: 900px) {
+    #para1{
+        width:90%;
+    }
+}
+@media screen and (max-width: 600px) {
+    #para1{
+        width:100%;
+    }
+} */
+
+/* we will not write the media query
+for 600px after because then 900 px 
+rule will apply , css goes from top to
+bottom */
+
+/* mobile first thinking */
+@media screen  and (min-width:600px){
+    #para1{
+        width:90%;
+    }
+}
+@media screen  and (min-width:900px){
+    #para1{
+        width:100%;
+    }
+}
