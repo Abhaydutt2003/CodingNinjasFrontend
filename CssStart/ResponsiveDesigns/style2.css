@@ -1,0 +1,31 @@
+#div1{
+    height: 50vh;
+    width:100vw;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+#div1 div{
+    width:30%;
+    height:50%;
+}
+#div2{
+    background-color:#ff8989;
+}
+#div3{
+    background-color:#88f7ce;
+}
+#div4{
+    background-color:#e29df2;
+}
+@media screen and (max-width:600px){
+    #div1{
+        flex-direction: column;
+    }
+    #div1 div{
+        width:98%;
+        height:50%;
+    }
+}
+
+
