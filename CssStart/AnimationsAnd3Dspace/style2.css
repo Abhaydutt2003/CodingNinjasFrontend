@@ -1,0 +1,55 @@
+
+#box1{
+    position:relative;
+    height:100px;
+    width:100px;
+    background-color: royalblue;
+    border: 3px black solid;
+    top:300px;
+    left:100px;
+    /* transition: 1s linear; */
+    /* animation: 5s linear bounce infinite alternate; */
+}
+
+@keyframes bounce{
+    0%{
+        transform: translate(0px,-100px);
+    }
+    25%{
+        transform: translate(0px,100px);
+    }
+    50%{
+        transform: translate(0px,-50px);
+    }
+    75%{
+        transform: translate(0px,50px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+}
+#textFade{
+    position: relative;
+    left:500px;
+    width:250px;
+    height: 100px;
+    border:3px black solid;
+    /* animation: 3s textfade linear infinite alternate; */
+}
+@keyframes textfade{
+    0%{
+        opacity: 50%;
+    }
+    25%{
+        opacity: 50%;
+    }
+    50%{
+        opacity: 50%;
+    }
+    75%{
+        opacity: 50%;
+    }
+    100%{
+        opacity: 50%;
+    }
+}
