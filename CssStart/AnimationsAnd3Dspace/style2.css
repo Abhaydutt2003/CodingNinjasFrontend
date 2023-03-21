@@ -8,7 +8,7 @@
     top:300px;
     left:100px;
     /* transition: 1s linear; */
-    /* animation: 5s linear bounce infinite alternate; */
+    /* animation: 2s linear bounce infinite alternate; */
 }
 
 @keyframes bounce{
@@ -34,22 +34,71 @@
     width:250px;
     height: 100px;
     border:3px black solid;
-    /* animation: 3s textfade linear infinite alternate; */
+    /* animation: 1s textfade linear infinite alternate; */
 }
 @keyframes textfade{
     0%{
-        opacity: 50%;
+        opacity: 0%;
     }
     25%{
-        opacity: 50%;
+        opacity: 25%;
     }
     50%{
         opacity: 50%;
     }
     75%{
-        opacity: 50%;
+        opacity: 75%;
     }
     100%{
-        opacity: 50%;
+        opacity: 100%;
+    }
+}
+
+#box2{
+    height:200px;
+    width:200px;
+    position:relative;
+    left:500px;
+    top:500px;
+    background-color: brown;
+    border:3px black dashed;
+    animation-name: reduceSize,changeShape,rotate1;
+    animation-duration: 1s,1s,1s;
+    animation-iteration-count: infinite,infinite,infinite;
+    animation-direction: alternate;
+}
+/* we will make three animations and implement it on box2 */
+
+@keyframes reduceSize{
+    from{
+        height:200px;
+        width:200px;
+    }to{
+        height:100px;
+        width:100px;
+    }
+}
+@keyframes changeShape{
+    0%{
+        border-radius: 0%;
+    }
+    25%{
+        border-radius: 12.5%;
+    }
+    50%{
+        border-radius: 25%;
+    }
+    75%{
+        border-radius: 25%;
+    }
+    100%{
+        border-radius: 50%;
+    }
+}
+@keyframes rotate1{
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
     }
 }
