@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #outerDiv {
+            height: 500px;
+            width: 500px;
+            border: 3px black solid;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #innerDiv {
+            height: 250px;
+            width: 250px;
+            border: 3px black solid;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="outerDiv">
+        <div id="innerDiv">
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        "use strict";
+        // b=0;strict mode can also be applied to particular function
+        var outerDiv = document.getElementById('outerDiv');
+        var innerDiv = document.getElementById('innerDiv');
+        function fn1(event) {
+            console.log("innerdiv");
+            event.stopPropagation();
+        }
+        function fn2(event) {
+            console.log("outerdiv");
+            event.stopPropagation();
+        }
+        function fn3(event) {
+            console.log("document");
+            event.stopPropagation();
+        }
+        outerDiv.addEventListener('click', fn2);
+        innerDiv.addEventListener('click', fn1);
+        document.addEventListener('click', fn3);
+    </script>
+
+
+</body>
+
+</html>

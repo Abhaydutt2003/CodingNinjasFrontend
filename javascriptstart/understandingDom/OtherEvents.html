@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            height: 99vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        button {
+            all: unset;
+            cursor: pointer;
+        }
+
+        #btn {
+            background-color: blueviolet;
+            border: 3px black solid;
+            height: 300px;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #btn:hover {
+            outline: orange 1px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn">
+        <h2>CLICK<h2>
+    </button>
+
+    <input type="text" name="search" id="search">
+
+
+
+    <script>
+        var btn = document.getElementById('btn');
+        function mo() {
+            console.log("Mouse Over");
+        }
+        function mo2() {
+            console.log("Mouse Out");
+        }
+        btn.addEventListener('mouseover', mo);
+        btn.addEventListener('mouseout', mo2);
+
+        var searchInput = document.getElementById('search');
+        function fn(){
+            console.log('key pressed');
+        }
+
+        //TO KNOW THE KEY THAT WAS PRESSED
+        function fn2(event){
+            console.log("keydown ", event.keyCode);
+        }
+
+        searchInput.addEventListener('keydown',fn2);
+
+
+    </script>
+</body>
+
+
+
+
+</html>
